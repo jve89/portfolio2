@@ -4,9 +4,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/CSS/style.css">
     <title>Document</title>
+
+     <!-- Fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+
+    <div class="container">
+
+        <header>
+            <h1>
+              <img class="logo" src="assets/IMG/81b523961db1590b76306e95029c5bc3.avif" alt="Logo of numbers">Number Guessing Game
+            </h1>
+        </header>
+
+        <section class="game-area">
+
+            <div class="question-area">
+                <label for="guessfield" id="guesslabel">Guess a number</label>
+                <input type="number" id="guessinput">
+                <input type="submit" value="Submit" id="guesssubmit">
+            </div>
+
+            <div class="result-area">
+                <span id="attempts">a</span>
+                <span id="lastanswer">b</span>
+                <span id="loworhigh">c</span>
+            </div>
+
+        </section>
+
+        <section class="explanation-area">
+            <p>Guess a random number between 1 and 1000.</p>
+            <p>You have 20 attempts to guess the right number.</p>
+        </section>
+
+        <footer> 
+            <span>Facebook</span>
+            <span>Instagram</span>
+            <span>Twitter</span>
+            <span>LinkedIn</span>
+        </footer>
+
+    </div>
+
+
+    <script src="assets/JS/script.js"></script>
 </body>
 </html>

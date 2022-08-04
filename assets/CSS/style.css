@@ -1,0 +1,60 @@
+/* General website */
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+/* Header*/
+
+header {
+    text-align: center;
+    font-size: 1.2rem;    
+}
+
+.logo {
+    height: 50px;
+    padding-right: 5px;
+    position: relative;
+    top: 10px;
+}
+
+/* Game area */
+
+.game-area {
+    text-align: center;
+    height: 400px;
+    width: 600px;
+    margin: auto;
+    border: 1px solid black;
+}
+
+/* Question area */
+
+/* Result area */
+
+
+
+/* Explanation area */
+
+.explanation-area {
+    text-align: center;
+    height: 50px;
+    width: 580px;
+    margin: auto;
+    padding: 10px;
+    line-height: 25%;
+    border: 1px solid black;
+}
+
+
+
+/* footer*/
+
+footer {
+    margin-top: 50px;
+    text-align: center;
+}
+
+footer > span {
+    padding: 0px 20px;
+}
