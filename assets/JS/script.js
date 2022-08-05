@@ -54,7 +54,7 @@ function checkGuess() {
     guessInput.focus();
 }
 
-// Game over function to reset the game after too many attempts or answering right answer
+// 'Game over' function to reset the game after too many attempts or answering right answer
 function gameOver() {
 
     guessInput.disabled = true;
@@ -79,7 +79,10 @@ function resetGame() {
         resetAll[i].textContent = '';
     }
 
-    resetButton.parentNode.removeChild(resetButton);
+    let removeButton = document.getElementById("resetbuttondiv");
+    while (removeButton.firstChild) {
+    removeButton.removeChild(removeButton.firstChild);
+}
 
     guessInput.disabled = false;
     guessSubmit.disabled = false;
