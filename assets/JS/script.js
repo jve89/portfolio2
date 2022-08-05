@@ -28,27 +28,23 @@ function checkGuess() {
     }
     guessCount++;
     attempts.textContent += guessAttempt + ' ';
-
     if (guessAttempt === randomNumber) {
         lastAnswer.textContent = 'Congratulations! You got it right!';
         lastAnswer.style.backgroundColor = 'green';
         lowOrHigh.textContent = '';
         gameOver();
-    
     } else if (guessCount === 10) {
         lastAnswer.textContent = 'Game over!';
         lowOrHigh.textContent = '';
         gameOver();
-
     } else {
         lastAnswer.textContent = 'Wrong!';
-        lastAnswer.style.backgroundColor = 'red';
-        
+        lastAnswer.style.backgroundColor = 'red';    
     if (guessAttempt < randomNumber) {
             lowOrHigh.textContent = 'Your guess is too low!';
     } else if (guessAttempt > randomNumber) {
             lowOrHigh.textContent = 'Your guess is too high!';
-     }
+        }
     }
     guessInput.value = '';
     guessInput.focus();
@@ -56,39 +52,30 @@ function checkGuess() {
 
 // 'Game over' function to reset the game after too many attempts or answering right answer
 function gameOver() {
-
     guessInput.disabled = true;
     guessSubmit.disabled = true;
-
     let resetButton = document.createElement('button');
     resetButton.textContent = 'Start a new game';
-
     let resetButtonDiv = document.getElementById('resetbuttondiv')
     resetButtonDiv.appendChild(resetButton);
-
     resetButton.addEventListener('click', resetGame);
 }
 
 // After clicking newly created reset button, function resetGame will be used 
-
 function resetGame() {
     guessCount = 1;
-
     let resetAll = document.querySelectorAll('.result-area div');
     for (let i = 0; i < resetAll.length; i++) {
         resetAll[i].textContent = '';
     }
-
     let removeButton = document.getElementById("resetbuttondiv");
     while (removeButton.firstChild) {
     removeButton.removeChild(removeButton.firstChild);
 }
-
     guessInput.disabled = false;
     guessSubmit.disabled = false;
     guessInput.value = '';
     guessInput.focus();
-
     randomNumber = Math.floor(Math.random() * 500) + 1;
 }
 
