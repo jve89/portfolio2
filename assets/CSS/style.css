@@ -37,6 +37,9 @@ header h1 {
 .game-area {
     /* border: 1px solid black; */
     height: 530px;
+    width: fit-content;
+    padding: 0px 20px;
+    margin: auto;
 }
 
 /* Question area */
@@ -88,6 +91,7 @@ header h1 {
 
 .result-area {
     text-align: center;
+    width: 280px;
     margin: auto;
     margin-top: 20px;
     padding-top: 20px;
@@ -153,15 +157,12 @@ header h1 {
     
 }
 
-
-
 /* footer*/
 
 footer {
     /* border: 5px solid blue; */
     height: 30px;
-    
-    list-style: none;
+    /* list-style: none; */
     font-size: large;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -189,27 +190,29 @@ footer > span {
 
     .container {
         width: 80%;
-    }
+    } 
 
     footer {
         line-height: 2rem;
+
     }
 
     footer span {
         display: block;
     }
 
+    .explanation-area { 
+        height: 435px;
+        width: auto;
+        margin: auto;
+    }
+
     .game-area {
-        height: fit-content;
+        height: 450px;
+        width: auto;
+        margin: auto;
+        /* border: 1px solid black; */
     }
-
-    .explanation-area {
-        height: fit-content;
-    }
-
-
-
-
 }
 
 
