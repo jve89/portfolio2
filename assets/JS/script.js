@@ -20,6 +20,14 @@ guessInput.focus();
 // Add event listener to submit button. When clicked the checkGuess function will be used
 guessSubmit.addEventListener('click', checkGuess);
 
+// Add enter key click to submit button
+guessInput.addEventListener("keypress", function(event) {
+    if (event.key === "Enter") {
+        event.preventDefault;
+        guessSubmit.click();
+    }
+});
+
 // Check the inserted number and display the previous used numbers, the result, and a hint
 function checkGuess() {
     let guessAttempt = Number(guessInput.value);
