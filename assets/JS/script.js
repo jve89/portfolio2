@@ -21,9 +21,9 @@ guessInput.focus();
 guessSubmit.addEventListener('click', checkGuess);
 
 // Add enter key click to submit button
-guessInput.addEventListener("keypress", function(event) {
-    if (event.key === "Enter") {
-        event.preventDefault;
+guessInput.addEventListener("keyup", function(event) {
+    if (event.keyCode === 13) {
+        event.preventDefault();
         guessSubmit.click();
     }
 });
@@ -68,17 +68,7 @@ function gameOver() {
     let resetButtonDiv = document.getElementById('resetbuttondiv')
     resetButtonDiv.appendChild(resetButton);
     resetButton.addEventListener('click', resetGame);
-    // Add the use of the enter key to the reset button (DOESN'T WORK YET)
-//     resetButton.addEventListener("keypress", function(event) {
-//     if (event.key === "Enter") {
-//         event.preventDefault;
-//         document.getElementById('resetbutton').click(resetGame);
-//     }
-// });
 }
-
-
-
 
 // After clicking newly created reset button, function resetGame will be used 
 function resetGame() {
