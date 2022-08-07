@@ -60,6 +60,7 @@ Both buttons are styled in such a way that the text is clearly readible and whil
   - Different levels. For example by implementing less attempts or a greater range of numbers.
   - App version for Android and iOS.
 
+
 ## __Testing__
 
 The Number Guessing Game website has been tested on multiple web browsers installed on multiple devices. In this chapter, I'll explain the features that I've tested and the outcome of the tests. Any interesting highlights (bugs, problems, etc.) that I found will be discussed here as well.
@@ -93,5 +94,49 @@ Chrome (mobile)
 Just like on the desktop, the testing went exactly the same in both other browsers.
 
 ### __Validator testing__
+
+#### HTML
+  - Initially, some errors were found but nothing major. I changed a 'for' attribute to meet the requirements and changed a section element to become a div element.  
+  - After doing these changes, no errors were returned when passing through the official HTML validator https://validator.w3.org/  
+#### CSS
+  - Initially, some errors were found but again nothing major. Removed the display: hidden; property because it doesn't seem to exist. 
+  - After doing these changes, no errors were returned when passing through the official CSS validator https://jigsaw.w3.org/
+#### JS
+  - Initially, some errors were found but again nothing major. I forgot a semicolon somewhere in the code and declared some unused variables.
+  - After doing these changes, no errors were returned when passing through the official JS validator https://jshint.com/
+  - Metrics:
+    - There are 4 functions in this file.
+    - Function with the largest signature take 1 arguments, while the median is 0.
+    - Largest function has 20 statements in it, while the median is 10.
+    - The most complex function has a cyclomatic complexity value of 6 while the median is 2.5.
+  - Remaing warning: 	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+#### Lighthouse
+  - All pages have been tested both for the desktop version as the mobile version. Overall, the desktop version performed superior over the mobile version but both were sufficient. The picture below shows the result of the home page desktop version test.
+![Lighthouse test](assets/IMG/lighthouse.png)
+
+
+
+### __Unfixed bugs__
+
+ - The 'Enter' key does not function for the reset ('start a new game') button and can only be clicked by mouse. Even with help from a tutor, we didn't manage to get this to work.
+ - The game will be reset after clicking the 'how to play?' button and after that, going back to the game using the 'back to game!' button. It took me a day to figure out how to solve this and I couldn't find a solution.
+
+
+
+## __Deployment__
+- The site was deployed to GitHub pages. The steps to deploy are as follows:
+  - In the GitHub repository, navigate to the Settings tab.
+  - From the pages side menu, select the 'main' branch source'.
+  - Once the main branch source has been saved, the page will be automatically refreshed with a detailed ribbon display.
+  - indicate the successful deployment.
+The live link can be found here: https://jve89.github.io/portfolio2/
+
+
+## __Credits__
+
+
+
+
+
 
 
