@@ -2,7 +2,6 @@
 let randomNumber = Math.floor(Math.random() * 500) + 1;
 
 // Create variables from elements
-let guessLabel = document.querySelector("#guesslabel");
 let guessInput = document.querySelector("#guessinput");
 let guessSubmit = document.querySelector("#guesssubmit");
 
@@ -12,7 +11,6 @@ let lowOrHigh = document.querySelector("#loworhigh");
 
 // Other important variables
 let guessCount = 1;
-let resetButton;
 
 // Focus cursor on input field after site is loaded
 guessInput.focus();
@@ -65,7 +63,7 @@ function gameOver() {
     let resetButton = document.createElement('button');
     resetButton.textContent = 'Start a new game';
     resetButton.setAttribute('id','resetbutton');
-    let resetButtonDiv = document.getElementById('resetbuttondiv')
+    let resetButtonDiv = document.getElementById('resetbuttondiv');
     resetButtonDiv.appendChild(resetButton);
     resetButton.addEventListener('click', resetGame);
 }
