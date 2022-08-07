@@ -64,10 +64,21 @@ function gameOver() {
     guessSubmit.disabled = true;
     let resetButton = document.createElement('button');
     resetButton.textContent = 'Start a new game';
+    resetButton.setAttribute('id','resetbutton');
     let resetButtonDiv = document.getElementById('resetbuttondiv')
     resetButtonDiv.appendChild(resetButton);
     resetButton.addEventListener('click', resetGame);
+    // Add the use of the enter key to the reset button (DOESN'T WORK YET)
+//     resetButton.addEventListener("keypress", function(event) {
+//     if (event.key === "Enter") {
+//         event.preventDefault;
+//         document.getElementById('resetbutton').click(resetGame);
+//     }
+// });
 }
+
+
+
 
 // After clicking newly created reset button, function resetGame will be used 
 function resetGame() {

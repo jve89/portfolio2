@@ -1,12 +1,56 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# __The Number Guessing Game__
 
-Welcome jve89,
+Welcome to the Number Guessing Game website! This website is specially designed to be easy to use, intuitive and fun! This website has been written using the 3 main pillars of the web, namely HTML, CSS and Javascript. The game takes a random number between 1 and 500. To you the task to figure out which number it is! You only have 10 attempts though.... Good luck!
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+![Am I responsive?](TO BE FINISHED!)
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
 
-## Gitpod Reminders
+## __Features__
+
+In this chapter, I will go over the Number Guessing Game existing features and future features that still need to be implemented.
+
+### __Existing features__
+
+- __The Number Guessing Game logo and heading__
+  
+Featured at the top center of the page, the Number Guessing Game logo and heading are easy to read due to the larger font size and it describes in just 3 words what the website is about. The logo itself is positioned left of the header text and was found on google using the search term: 'numbers'.
+
+![NGG logo](assets/IMG/logo.png)
+
+- __The Game area__
+  
+Just below the header and logo of the Number Guessing Game website, you'll find the actual game area of the website. It's just like the header and logo positioned in the center of the website and consists of 3 areas.
+ - The text label asking you to 'guess a number
+ - The input area asking you to fill in a number between 1 and 500
+ - The submit button to check your number. The submit button is both operable by clicking it using your mouse as well as using the 'enter' key on your keyboard.
+
+![Game area](assets/IMG/game-area.png)
+
+- __The result area__
+
+The result area is initially not visible on the website, although the space for this area is already reserved just below the game area. The result area becomes visual after submitting your first attempt. The result area consists of the following 3 elements:
+  - Information area, that shows you if your answer was wrong or right. The wrong answer is colored red, and the right answer is colored green. 
+  - Hint area, that shows you whether your guessed number is too low or to high. Using this information, you can narrow down the range of possible right answers.
+  - The attempted numbers area. This area shows you your previous attempted numbers, so you won't forget the numbers you already used so far.
+
+  ![Results area](assets/IMG/results-area.png)
+
+- __The reset area__
+
+The reset area only becomes visible after your game is over. The game is over after not guessing the right number within 10 attempts or after succeeding to guess the right number. Your input field and submit button will both be disabled when the reset area becomes visible. The reset area consists of the following 3 elements:
+  - Information area, that shows you this time whether the game is over unsuccesfully (in red) or succesfully (in green).
+  - The attempted numbers area. Your previously attempted numbers will still be visible.
+  - The reset button. A new button will appear to reset the game and start right at the beginning. This button is clickable by mouse as well as by pressing the enter key on your keyboard.
+
+  ![Reset area right](assets/IMG/resetbutton.right.png)
+  ![Reset area wrong](assets/IMG/resetbutton.wrong.png)
+  
+
+
+  
+
+
+
 
 To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
 
