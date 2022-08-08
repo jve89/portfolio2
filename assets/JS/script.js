@@ -26,7 +26,8 @@ guessInput.addEventListener("keyup", function(event) {
     }
 });
 
-// Check the inserted number and display the previous used numbers, the result, and a hint
+// Check the inserted number and display the previous used numbers, the result, and a hint 
+// Code created by myself using intructions and inspiration from Blueline Learning Solutions credited in Readme file
 function checkGuess() {
     let guessAttempt = Number(guessInput.value);
     if (guessCount === 1) {
@@ -57,6 +58,7 @@ function checkGuess() {
 }
 
 // 'Game over' function to reset the game after too many attempts or answering right answer
+// Code created by myself using intructions and inspiration from Blueline Learning Solutions credited in Readme file
 function gameOver() {
     guessInput.disabled = true;
     guessSubmit.disabled = true;
@@ -69,6 +71,7 @@ function gameOver() {
 }
 
 // After clicking newly created reset button, function resetGame will be used 
+// Code created by myself using intructions and inspiration from Blueline Learning Solutions credited in Readme file
 function resetGame() {
     guessCount = 1;
     let resetAll = document.querySelectorAll('.result-area div');
