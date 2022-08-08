@@ -2,7 +2,7 @@
 
 Welcome to the Number Guessing Game website! This website is specially designed to be easy to use, intuitive and fun! This website has been written using the 3 main pillars of the web, namely HTML, CSS and Javascript. The game takes a random number between 1 and 500. To you the task to figure out which number it is! You only have 10 attempts though.... Good luck!
 
-![Am I responsive?](TO BE FINISHED!)
+![Am I responsive?](assets/IMG/responsive.png)
 
 
 ## __Features__
