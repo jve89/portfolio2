@@ -134,6 +134,25 @@ The live link can be found here: https://jve89.github.io/portfolio2/
 
 ## __Credits__
 
+I used multiple sources for my inspiration for this project. Initially, I wanted to imitate a website that i've seen before that tells you if the weather is good enough to wear shorts. This seemed to be a couple steps too far as it needs to fetch the live weather from somewhere. My mentor thought it was a good idea and we did some research on it. After a while, I started to not believe in this project anymore and moved away from it.
+
+I started again to search google for beginner javascript projects and found some of the usual stuff, like a calculater, timer, to-do list and unit converter. All of this seemed nice but the Number Guessing Game caught my attention right away. I found this idea through google who linked me to the website of 'Udemy'. This is a website that provides courses in whatever topic, so it's a no-brainer to look around here as well. Here I found a course called  '17 complete javascript projects explained step by step' made by 'Bluelime Learning Solutions' that explained multiple ideas for beginner javascript projects, and there it was. The inspiration for the Number Guessing Game was born!
+
+For research, I used the following websites:
+- https://www.w3schools.com/ (very useful website where you can search for code properties and how to use them)
+- https://developer.mozilla.org/ (Does the same as the website mentioned above)
+
+I also got information from Youtube. My favorite used youtube channels are as follows:
+- Programming with Mosh
+- Web Dev Simplified
+- freeCodeCamp.org
+
+The font that I used is called: 'Josefin Sans' and came from Google fonts and the Nummber Guessing Game logo came from the website 'poki.com'.
+
+
+## __Epilogue__
+
+Thank you for taking the time to read through this README, my code and of course the end result of the Number Guessing Game website. I hope you find the end result inspiring as well!
 
 
 
